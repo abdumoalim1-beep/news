@@ -229,14 +229,7 @@ export default function HomeClient({
           </div>
         </div>
 
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(4, 1fr)",
-            gap: 24,
-            marginTop: 48,
-          }}
-        >
+        <div className="topics-grid" style={{ marginTop: 48 }}>
           {TOPICS.map((topic) => (
             <div key={topic.title} style={{ textAlign: "right" }}>
               <div
@@ -302,13 +295,7 @@ export default function HomeClient({
           </Link>
         </div>
 
-        <div
-          style={{
-            display: "grid",
-            gap: "32px 28px",
-            gridTemplateColumns: "repeat(3,1fr)",
-          }}
-        >
+        <div className="articles-grid">
           {latestArticles.map((a) => (
             <ArticleCard key={a.id} article={a} theme={theme} />
           ))}
@@ -347,13 +334,7 @@ export default function HomeClient({
             </Link>
           </div>
 
-          <div
-            style={{
-              display: "grid",
-              gap: "32px 28px",
-              gridTemplateColumns: "repeat(3,1fr)",
-            }}
-          >
+          <div className="articles-grid">
             {categoryArticles.map((a) => (
               <ArticleCard key={a.id} article={a} theme={theme} />
             ))}

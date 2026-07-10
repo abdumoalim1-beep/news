@@ -40,13 +40,7 @@ export default function ArticlesClient({
       <div
         style={{ maxWidth: 1100, margin: "0 auto", padding: "0 4px 80px" }}
       >
-        <div
-          style={{
-            display: "grid",
-            gap: "32px 28px",
-            gridTemplateColumns: "repeat(3,1fr)",
-          }}
-        >
+        <div className="articles-grid">
           {articles.map((a) => (
             <ArticleCard key={a.id} article={a} theme={theme} />
           ))}
