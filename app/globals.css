@@ -1,0 +1,70 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #efeeeb;
+  transition: background 0.25s ease;
+}
+
+html[data-theme="dark"] body {
+  background: #17181a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::selection {
+  background: #1c1b1a;
+  color: #efeeeb;
+}
+
+html[data-theme="dark"] ::selection {
+  background: #e9e7e2;
+  color: #17181a;
+}
+
+a {
+  color: #1c1b1a;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #57544e;
+}
+
+html[data-theme="dark"] a {
+  color: #e9e7e2;
+}
+
+html[data-theme="dark"] a:hover {
+  color: #b7b4ac;
+}
+
+.card-link:hover {
+  border-color: #c9c6bf !important;
+}
+
+.fade-hover:hover {
+  opacity: 0.85;
+}
+
+button {
+  font-family: inherit;
+}
+
+input,
+textarea,
+select {
+  font-family: inherit;
+}
+
+.block-controls {
+  opacity: 0.85;
+}
+.block-controls:hover {
+  opacity: 1;
+}
