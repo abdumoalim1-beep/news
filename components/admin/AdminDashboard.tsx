@@ -495,7 +495,11 @@ function BlockEditor({
   );
 }
 
-export default function AdminDashboard() {
+export default function AdminDashboard({
+  githubMode = false,
+}: {
+  githubMode?: boolean;
+}) {
   const router = useRouter();
   const [articles, setArticles] = useState<Article[]>([]);
   const [editingId, setEditingId] = useState<string | null>(null);
@@ -503,6 +507,14 @@ export default function AdminDashboard() {
   const [showAddMenu, setShowAddMenu] = useState(false);
   const [lightboxSrc, setLightboxSrc] = useState<string | null>(null);
   const [saving, setSaving] = useState(false);
+  const [deployNotice, setDeployNotice] = useState<string | null>(null);
+  const deployNoticeTimer = useRef<ReturnType<typeof setTimeout>>();
+
+  const showDeployNotice = (message: string) => {
+    setDeployNotice(message);
+    clearTimeout(deployNoticeTimer.current);
+    deployNoticeTimer.current = setTimeout(() => setDeployNotice(null), 6000);
+  };
 
   const loadArticles = useCallback(async () => {
     const res = await fetch("/api/admin/articles");
@@ -542,10 +554,18 @@ export default function AdminDashboard() {
 
   const onDeleteArticle = async (id: string) => {
     if (!confirm("حذف هذا المقال؟")) return;
-    await fetch(`/api/admin/articles/${encodeURIComponent(id)}`, {
+    const res = await fetch(`/api/admin/articles/${encodeURIComponent(id)}`, {
       method: "DELETE",
     });
-    await loadArticles();
+    const data = await res.json().catch(() => null);
+    if (data?.deploying) {
+      setArticles((prev) => prev.filter((a) => a.id !== id));
+      showDeployNotice(
+        "تم رفع الحذف إلى المستودع، سيختفي المقال من الموقع خلال دقيقة تقريبًا بعد إعادة النشر التلقائي."
+      );
+    } else {
+      await loadArticles();
+    }
   };
 
   const onToggleStatus = async (a: Article) => {
@@ -553,12 +573,20 @@ export default function AdminDashboard() {
       ...a,
       status: a.status === "published" ? ("draft" as const) : ("published" as const),
     };
-    await fetch(`/api/admin/articles/${encodeURIComponent(a.id)}`, {
+    const res = await fetch(`/api/admin/articles/${encodeURIComponent(a.id)}`, {
       method: "PUT",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(updated),
     });
-    await loadArticles();
+    const data = await res.json().catch(() => null);
+    if (data?.deploying) {
+      setArticles((prev) => prev.map((x) => (x.id === a.id ? updated : x)));
+      showDeployNotice(
+        "تم رفع التغيير إلى المستودع، سيظهر على الموقع خلال دقيقة تقريبًا بعد إعادة النشر التلقائي."
+      );
+    } else {
+      await loadArticles();
+    }
   };
 
   const persistDraft = async () => {
@@ -576,7 +604,20 @@ export default function AdminDashboard() {
           body: JSON.stringify(draft),
         }
       );
-      if (res.ok) await loadArticles();
+      if (res.ok) {
+        const data = await res.json().catch(() => null);
+        if (data?.deploying) {
+          setArticles((prev) => {
+            const withoutDraft = prev.filter((a) => a.id !== draft.id);
+            return [draft, ...withoutDraft];
+          });
+          showDeployNotice(
+            "تم رفع المقال إلى المستودع، سيظهر التحديث على الموقع خلال دقيقة تقريبًا بعد إعادة النشر التلقائي على فيرسل."
+          );
+        } else {
+          await loadArticles();
+        }
+      }
     } finally {
       setSaving(false);
     }
@@ -590,6 +631,17 @@ export default function AdminDashboard() {
 
   const onPreview = async () => {
     if (!draft) return;
+    if (githubMode) {
+      // Committed content isn't live until the next deploy finishes, so
+      // preview the in-memory draft directly instead of the saved page.
+      try {
+        sessionStorage.setItem("admin_preview_article", JSON.stringify(draft));
+      } catch {
+        // ignore
+      }
+      window.open("/admin/preview", "_blank");
+      return;
+    }
     await persistDraft();
     window.open(`/articles/${encodeURIComponent(draft.id)}`, "_blank");
   };
@@ -657,6 +709,22 @@ export default function AdminDashboard() {
       }}
     >
       <div style={{ maxWidth: 900, margin: "0 auto", padding: "32px 20px 80px" }}>
+        {deployNotice && (
+          <div
+            style={{
+              background: "#eef3fb",
+              border: "1px solid #cddcf2",
+              color: "#274a78",
+              borderRadius: 12,
+              padding: "12px 16px",
+              fontSize: 13,
+              marginBottom: 20,
+              lineHeight: 1.7,
+            }}
+          >
+            {deployNotice}
+          </div>
+        )}
         {isListView ? (
           <>
             <div

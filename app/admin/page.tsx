@@ -1,4 +1,5 @@
 import { isAdminConfigured, isAuthenticated } from "@/lib/auth";
+import { isGithubConfigured } from "@/lib/github";
 import LoginForm from "@/components/admin/LoginForm";
 import AdminDashboard from "@/components/admin/AdminDashboard";
 
@@ -11,5 +12,5 @@ export default function AdminPage() {
   if (!authed) {
     return <LoginForm configured={isAdminConfigured()} />;
   }
-  return <AdminDashboard />;
+  return <AdminDashboard githubMode={isGithubConfigured()} />;
 }

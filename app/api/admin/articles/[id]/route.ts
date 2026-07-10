@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { isAuthenticated } from "@/lib/auth";
 import { Article, deleteArticle, saveArticle } from "@/lib/articles";
+import { isGithubConfigured } from "@/lib/github";
 
 export async function PUT(
   req: NextRequest,
@@ -14,7 +15,7 @@ export async function PUT(
     return NextResponse.json({ error: "بيانات غير صالحة" }, { status: 400 });
   }
   await saveArticle(article);
-  return NextResponse.json({ ok: true });
+  return NextResponse.json({ ok: true, deploying: isGithubConfigured() });
 }
 
 export async function DELETE(
@@ -25,5 +26,5 @@ export async function DELETE(
     return NextResponse.json({ error: "غير مصرح" }, { status: 401 });
   }
   await deleteArticle(params.id);
-  return NextResponse.json({ ok: true });
+  return NextResponse.json({ ok: true, deploying: isGithubConfigured() });
 }

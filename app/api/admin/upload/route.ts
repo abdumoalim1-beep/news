@@ -3,6 +3,7 @@ import fs from "node:fs/promises";
 import path from "node:path";
 import crypto from "node:crypto";
 import { isAuthenticated } from "@/lib/auth";
+import { commitFile, isGithubConfigured } from "@/lib/github";
 
 const ALLOWED_TYPES: Record<string, string> = {
   "image/png": "png",
@@ -12,7 +13,8 @@ const ALLOWED_TYPES: Record<string, string> = {
   "image/svg+xml": "svg",
 };
 
-const MAX_SIZE = 10 * 1024 * 1024; // 10MB
+// Kept comfortably under Vercel's serverless request body limit (4.5MB).
+const MAX_SIZE = 4 * 1024 * 1024;
 
 export async function POST(req: NextRequest) {
   if (!isAuthenticated()) {
@@ -30,15 +32,27 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: "نوع الملف غير مدعوم" }, { status: 400 });
   }
   if (file.size > MAX_SIZE) {
-    return NextResponse.json({ error: "الملف كبير جدًا" }, { status: 400 });
+    return NextResponse.json(
+      { error: "الملف كبير جدًا (الحد الأقصى 4 ميغابايت)" },
+      { status: 400 }
+    );
+  }
+
+  const filename = `${Date.now()}-${crypto.randomBytes(6).toString("hex")}.${ext}`;
+  const buffer = Buffer.from(await file.arrayBuffer());
+
+  if (isGithubConfigured()) {
+    await commitFile(
+      `public/uploads/${filename}`,
+      buffer,
+      `content: upload image ${filename}`
+    );
+    return NextResponse.json({ url: `/uploads/${filename}`, deploying: true });
   }
 
   const uploadsDir = path.join(process.cwd(), "public", "uploads");
   await fs.mkdir(uploadsDir, { recursive: true });
-
-  const filename = `${Date.now()}-${crypto.randomBytes(6).toString("hex")}.${ext}`;
-  const buffer = Buffer.from(await file.arrayBuffer());
   await fs.writeFile(path.join(uploadsDir, filename), buffer);
 
-  return NextResponse.json({ url: `/uploads/${filename}` });
+  return NextResponse.json({ url: `/uploads/${filename}`, deploying: false });
 }

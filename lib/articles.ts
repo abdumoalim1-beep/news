@@ -2,11 +2,13 @@ import "server-only";
 import fs from "node:fs/promises";
 import path from "node:path";
 import type { Article } from "./articleTypes";
+import { commitFile, deleteFileFromRepo, isGithubConfigured } from "./github";
 
 export * from "./articleTypes";
 export type { Article, ArticleBlock, BlockType } from "./articleTypes";
 
 const ARTICLES_DIR = path.join(process.cwd(), "content", "articles");
+const ARTICLES_REPO_DIR = "content/articles";
 
 export async function getAllArticles(): Promise<Article[]> {
   let files: string[] = [];
@@ -46,15 +48,30 @@ export async function getArticleById(id: string): Promise<Article | null> {
 }
 
 export async function saveArticle(article: Article): Promise<void> {
+  const json = JSON.stringify(article, null, 2) + "\n";
+
+  if (isGithubConfigured()) {
+    await commitFile(
+      `${ARTICLES_REPO_DIR}/${article.id}.json`,
+      Buffer.from(json, "utf-8"),
+      `content: save article ${article.id}`
+    );
+    return;
+  }
+
   await fs.mkdir(ARTICLES_DIR, { recursive: true });
-  await fs.writeFile(
-    path.join(ARTICLES_DIR, `${article.id}.json`),
-    JSON.stringify(article, null, 2) + "\n",
-    "utf-8"
-  );
+  await fs.writeFile(path.join(ARTICLES_DIR, `${article.id}.json`), json, "utf-8");
 }
 
 export async function deleteArticle(id: string): Promise<void> {
+  if (isGithubConfigured()) {
+    await deleteFileFromRepo(
+      `${ARTICLES_REPO_DIR}/${id}.json`,
+      `content: delete article ${id}`
+    );
+    return;
+  }
+
   try {
     await fs.unlink(path.join(ARTICLES_DIR, `${id}.json`));
   } catch {

@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 export default function ImageUploader({
   src,
@@ -21,10 +21,26 @@ export default function ImageUploader({
   const [uploading, setUploading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [dragOver, setDragOver] = useState(false);
+  const [localPreview, setLocalPreview] = useState<string | null>(null);
+  const [deploying, setDeploying] = useState(false);
+  const [remoteFailed, setRemoteFailed] = useState(false);
+
+  useEffect(() => {
+    setRemoteFailed(false);
+  }, [src]);
+
+  useEffect(() => {
+    return () => {
+      if (localPreview) URL.revokeObjectURL(localPreview);
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   const upload = async (file: File) => {
     setUploading(true);
     setError(null);
+    const objectUrl = URL.createObjectURL(file);
+    setLocalPreview(objectUrl);
     try {
       const form = new FormData();
       form.append("file", file);
@@ -35,11 +51,14 @@ export default function ImageUploader({
       const data = await res.json();
       if (!res.ok) {
         setError(data?.error || "فشل الرفع");
+        setLocalPreview(null);
         return;
       }
+      setDeploying(!!data.deploying);
       onChange(data.url);
     } catch {
       setError("فشل الرفع");
+      setLocalPreview(null);
     } finally {
       setUploading(false);
     }
@@ -57,6 +76,8 @@ export default function ImageUploader({
     const file = e.dataTransfer.files?.[0];
     if (file) upload(file);
   };
+
+  const displaySrc = localPreview || (remoteFailed ? null : src);
 
   return (
     <div
@@ -89,11 +110,14 @@ export default function ImageUploader({
         onChange={onFileChange}
         style={{ display: "none" }}
       />
-      {src ? (
+      {displaySrc ? (
         // eslint-disable-next-line @next/next/no-img-element
         <img
-          src={src}
+          src={displaySrc}
           alt={placeholder}
+          onError={() => {
+            if (!localPreview) setRemoteFailed(true);
+          }}
           style={{
             width: "100%",
             height: "100%",
@@ -110,7 +134,28 @@ export default function ImageUploader({
             padding: 8,
           }}
         >
-          {uploading ? "جارِ الرفع..." : placeholder}
+          {uploading
+            ? "جارِ الرفع..."
+            : remoteFailed
+            ? "الصورة قيد النشر..."
+            : placeholder}
+        </div>
+      )}
+      {deploying && !uploading && (
+        <div
+          style={{
+            position: "absolute",
+            top: 4,
+            insetInline: 4,
+            fontSize: 11,
+            color: "#1c1b1a",
+            background: "rgba(255,255,255,0.85)",
+            borderRadius: 6,
+            padding: "2px 6px",
+            textAlign: "center",
+          }}
+        >
+          سيظهر التحديث بعد اكتمال النشر التلقائي (~دقيقة)
         </div>
       )}
       {error && (

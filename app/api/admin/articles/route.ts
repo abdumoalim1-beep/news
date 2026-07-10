@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { isAuthenticated } from "@/lib/auth";
 import { Article, getAllArticles, saveArticle } from "@/lib/articles";
+import { isGithubConfigured } from "@/lib/github";
 
 export async function GET() {
   if (!isAuthenticated()) {
@@ -19,5 +20,5 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: "بيانات غير صالحة" }, { status: 400 });
   }
   await saveArticle(article);
-  return NextResponse.json({ ok: true });
+  return NextResponse.json({ ok: true, deploying: isGithubConfigured() });
 }
