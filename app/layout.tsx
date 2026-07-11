@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { IBM_Plex_Sans_Arabic } from "next/font/google";
 import { ThemeProvider } from "@/context/ThemeContext";
+import { SITE_URL, SITE_NAME, DEFAULT_OG_IMAGE } from "@/lib/site";
 import "./globals.css";
 
 const plexArabic = IBM_Plex_Sans_Arabic({
@@ -10,10 +11,29 @@ const plexArabic = IBM_Plex_Sans_Arabic({
   variable: "--font-plex-arabic",
 });
 
+const TITLE = "عبدالله معلم — أكتب عن الشركات والمنتجات والنمو";
+const DESCRIPTION =
+  "مهندس ومهتم بعالم المنتجات. أشارك ما أتعلمه عن تحليل الشركات وبناء المنتجات والنمو.";
+
 export const metadata: Metadata = {
-  title: "عبدالله معلم — أكتب عن الشركات والمنتجات والنمو",
-  description:
-    "مهندس ومهتم بعالم المنتجات. أشارك ما أتعلمه عن تحليل الشركات وبناء المنتجات والنمو.",
+  metadataBase: new URL(SITE_URL),
+  title: TITLE,
+  description: DESCRIPTION,
+  openGraph: {
+    title: TITLE,
+    description: DESCRIPTION,
+    url: SITE_URL,
+    siteName: SITE_NAME,
+    locale: "ar",
+    type: "website",
+    images: [{ url: DEFAULT_OG_IMAGE, width: 96, height: 96 }],
+  },
+  twitter: {
+    card: "summary",
+    title: TITLE,
+    description: DESCRIPTION,
+    images: [DEFAULT_OG_IMAGE],
+  },
 };
 
 export default function RootLayout({

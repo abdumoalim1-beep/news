@@ -1,6 +1,22 @@
+import { Metadata } from "next";
 import { getPublishedArticles } from "@/lib/articles";
 import ArticlesClient from "@/components/ArticlesClient";
 import { ArticleCardData } from "@/components/ArticleCard";
+
+export async function generateMetadata({
+  searchParams,
+}: {
+  searchParams: { category?: string };
+}): Promise<Metadata> {
+  const title = searchParams.category
+    ? `${searchParams.category} — عبدالله معلم`
+    : "جميع المقالات — عبدالله معلم";
+  return {
+    title,
+    openGraph: { title },
+    twitter: { title },
+  };
+}
 
 export default async function ArticlesPage({
   searchParams,
