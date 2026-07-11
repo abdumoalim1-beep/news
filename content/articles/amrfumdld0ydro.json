@@ -12,28 +12,21 @@
     {
       "id": "bmrfwunztw5h",
       "type": "p",
-      "html": "<p data-start=\"211\" data-end=\"274\" class=\"PDq2pG_selectionAnchorContainer\">في عالم الشركات فيه استراتيجية قديمة يسمونها <b>معاول</b><strong data-start=\"256\" data-end=\"274\">&nbsp;الذهب</strong><span aria-hidden=\"true\" class=\"PDq2pG_selectionAnchor\"></span></p>\n<p data-start=\"276\" data-end=\"288\">الفكرة تقول:</p>\n<p data-start=\"290\" data-end=\"317\">إذا اكتشف الناس منجم ذهب...</p>\n<p data-start=\"319\" data-end=\"337\">لا تروح تحفر معهم.</p>\n<p data-start=\"339\" data-end=\"354\">بع لهم المجارف.</p>\n<p data-start=\"356\" data-end=\"419\">لأنك بدل ما تراهن على شخص واحد يلقى الذهب، تراهن على السوق كله.</p>"
+      "html": "<p data-start=\"211\" data-end=\"274\" class=\"PDq2pG_selectionAnchorContainer\">في عالم الشركات فيه استراتيجية قديمة يسمونها <b>\"معاول</b><strong data-start=\"256\" data-end=\"274\">&nbsp;الذهب\" (Pick-and-Shovel Strategy).</strong><span aria-hidden=\"true\" class=\"PDq2pG_selectionAnchor\"></span></p>\n<p data-start=\"276\" data-end=\"288\">الفكرة تقول:</p>\n<p data-start=\"290\" data-end=\"317\">إذا اكتشف الناس منجم ذهب...</p>\n<p data-start=\"319\" data-end=\"337\">لا تروح تحفر معهم.</p>\n<p data-start=\"339\" data-end=\"354\">بع لهم المعاول و المجارف.</p>\n<p data-start=\"356\" data-end=\"419\">لأنك بدل ما تراهن على شخص واحد يلقى الذهب، تراهن على السوق كله.</p>"
     },
     {
       "id": "bmrfx23fslst",
       "type": "image",
       "layout": "full",
-      "widthPct": 100,
-      "maxHeight": 500,
-      "caption": ""
+      "widthPct": 50,
+      "maxHeight": 460,
+      "caption": "Bet On The Picks And Shovels",
+      "imgSrc": "/uploads/1783748632979-540d52f5e232.webp"
     },
     {
       "id": "bmrfx26ygscp",
       "type": "p",
       "html": "<p data-start=\"421\" data-end=\"484\">وأنا أبحث عن Mentra، ما توقعت أبدًا أن هذه الفكرة ترجع في بالي.</p><p data-start=\"486\" data-end=\"558\">في البداية كنت مقتنع أن Mentra مجرد شركة جديدة دخلت سوق النظارات الذكية.</p><p data-start=\"560\" data-end=\"609\">وشركة تدخل هذا السوق اليوم غالبًا عندها هدف واحد.</p><p data-start=\"611\" data-end=\"639\">تبني نظارة أفضل من الموجودة.</p><p data-start=\"641\" data-end=\"653\">كاميرا أفضل.</p><p data-start=\"655\" data-end=\"667\">بطارية أطول.</p><p data-start=\"669\" data-end=\"679\">تصميم أخف.</p><p data-start=\"681\" data-end=\"690\">وسعر أقل.</p><p data-start=\"692\" data-end=\"730\">دخلت موقعهم وأنا متوقع أشوف نفس الشيء.</p><p data-start=\"732\" data-end=\"762\">لكن أول دقيقة غيرت كل توقعاتي.</p>"
-    },
-    {
-      "id": "bmrfx34rd11k",
-      "type": "image",
-      "layout": "full",
-      "widthPct": 100,
-      "maxHeight": 500,
-      "caption": ""
     },
     {
       "id": "bmrfx3nfe4ys",
@@ -45,12 +38,13 @@
       "html": "أول شيء شدني... ما كان النظارة"
     },
     {
-      "id": "bmrfx3qun89x",
+      "id": "bmrfx34rd11k",
       "type": "image",
       "layout": "full",
-      "widthPct": 100,
-      "maxHeight": 500,
-      "caption": ""
+      "widthPct": 60,
+      "maxHeight": 540,
+      "caption": "https://mentraglass.com/",
+      "imgSrc": "/uploads/1783748766462-f873c54578b6.png"
     },
     {
       "id": "bmrfx3yezz21",
@@ -71,9 +65,10 @@
       "id": "bmrfxbl350xj",
       "type": "image",
       "layout": "full",
-      "widthPct": 100,
+      "widthPct": 55,
       "maxHeight": 500,
-      "caption": ""
+      "caption": "",
+      "imgSrc": "/uploads/1783748952506-c235f6661b36.png"
     },
     {
       "id": "bmrfxbomujti",
@@ -121,7 +116,8 @@
       "layout": "full",
       "widthPct": 100,
       "maxHeight": 500,
-      "caption": ""
+      "caption": "",
+      "imgSrc": "/uploads/1783748987450-c7f49ae043a8.webp"
     },
     {
       "id": "bmrfxgbuamp5",
@@ -142,9 +138,10 @@
       "id": "bmrfxnzxez9s",
       "type": "image",
       "layout": "full",
-      "widthPct": 100,
+      "widthPct": 45,
       "maxHeight": 500,
-      "caption": ""
+      "caption": "",
+      "imgSrc": "/uploads/1783749113542-87652cc91598.jpg"
     },
     {
       "id": "bmrfxo9k4pm7",
