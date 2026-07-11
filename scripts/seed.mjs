@@ -15,6 +15,7 @@ const articles = [
     readTime: "٦ دقائق",
     coverImage: null,
     thumbImage: null,
+    ogImage: null,
     blocks: [
       { id: "b1", type: "p", html: 'عندما تُفتح صفحة شركة جديدة لأول مرة، أغلبنا يبدأ بالسؤال الخطأ: "هل هذا المنتج جيد؟". السؤال الأدق، والذي يوفّر عليك وقتًا طويلًا، هو: "كيف تكسب هذه الشركة المال، ومن أين يأتي نموها؟".' },
       { id: "b2", type: "h2", html: "١. من هو العميل الحقيقي؟" },
@@ -36,6 +37,7 @@ const articles = [
     readTime: "٥ دقائق",
     coverImage: null,
     thumbImage: null,
+    ogImage: null,
     blocks: [
       { id: "b1", type: "p", html: "الحماس تجاه فكرة الحل يجعل كثيرًا من المؤسسين يتجاوزون خطوة فهم المشكلة الحقيقية للعميل." },
       { id: "b2", type: "quote", html: "أفضل الحلول تولد من فهم عميق للمشكلة، لا من حماس تجاه أداة معينة." },
@@ -51,6 +53,7 @@ const articles = [
     readTime: "٨ دقائق",
     coverImage: null,
     thumbImage: null,
+    ogImage: null,
     blocks: [
       { id: "b1", type: "p", html: "اعتمدت الشركة في بدايتها على بناء قاعدة من المستخدمين المتحمسين قبل التفكير بالتسويق المدفوع." },
     ],
@@ -65,6 +68,7 @@ const articles = [
     readTime: "٧ دقائق",
     coverImage: null,
     thumbImage: null,
+    ogImage: null,
     blocks: [
       { id: "b1", type: "p", html: "أغلب حالات الفشل لا تأتي من نقص التمويل، بل من عدم وضوح من هو العميل الذي يستحق كل هذا الجهد." },
     ],
@@ -79,6 +83,7 @@ const articles = [
     readTime: "٦ دقائق",
     coverImage: null,
     thumbImage: null,
+    ogImage: null,
     blocks: [
       { id: "b1", type: "p", html: "التسعير على أساس التعاون بدلاً من الاستخدام الفردي جعل نمو الشركة يتماشى مع نمو الفرق نفسها." },
     ],

@@ -13,7 +13,11 @@ export async function generateMetadata({
   if (!article) return {};
 
   const url = `${SITE_URL}/articles/${encodeURIComponent(article.id)}`;
-  const image = article.coverImage || article.thumbImage || DEFAULT_OG_IMAGE;
+  const image =
+    article.ogImage ||
+    article.coverImage ||
+    article.thumbImage ||
+    DEFAULT_OG_IMAGE;
 
   return {
     title: article.title,

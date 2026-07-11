@@ -30,6 +30,7 @@ function emptyDraft(): Article {
     readTime: "٥ دقائق",
     coverImage: null,
     thumbImage: null,
+    ogImage: null,
     blocks: [],
   };
 }
@@ -1016,6 +1017,41 @@ export default function AdminDashboard({
                   </div>
                   <div style={{ fontSize: 11, color: "#b7b4ac", marginTop: 6 }}>
                     يمكنك رفع نفس صورة الغلاف أو صورة مختلفة تناسب حجم البطاقة.
+                  </div>
+                </div>
+
+                <div>
+                  <label
+                    style={{
+                      fontSize: 12,
+                      color: "#86837e",
+                      display: "block",
+                      marginBottom: 6,
+                    }}
+                  >
+                    صورة المشاركة (تظهر عند مشاركة رابط المقال في X وواتساب
+                    وغيرها)
+                  </label>
+                  <div
+                    style={{
+                      width: "100%",
+                      maxWidth: 320,
+                      aspectRatio: "1.91 / 1",
+                      borderRadius: 12,
+                      overflow: "hidden",
+                    }}
+                  >
+                    <ImageUploader
+                      src={draft.ogImage}
+                      onChange={(url) => updateDraft({ ogImage: url })}
+                      placeholder="صورة المشاركة"
+                      fit="cover"
+                    />
+                  </div>
+                  <div style={{ fontSize: 11, color: "#b7b4ac", marginTop: 6 }}>
+                    اختيارية — إن لم ترفع صورة هنا، تُستخدم صورة الغلاف تلقائيًا.
+                    المقاس المثالي 1200×630 حتى لا تُقصّ الصورة بشكل غير مناسب
+                    عند المشاركة.
                   </div>
                 </div>
 

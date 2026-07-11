@@ -30,6 +30,7 @@ export type Article = {
   readTime: string;
   coverImage: string | null;
   thumbImage: string | null;
+  ogImage: string | null;
   blocks: ArticleBlock[];
 };
 
