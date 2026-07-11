@@ -1,0 +1,184 @@
+{
+  "id": "amrfumdld0ydro",
+  "title": "لماذا تراهن Mentra على نظام التشغيل بدل بيع النظارات؟",
+  "excerpt": "في هذا التحليل أفكك استراتيجية Mentra لفهم كيف بنت ميزة تنافسية في سوق تهيمن عليه Meta.",
+  "category": "تحليل المنتجات",
+  "status": "published",
+  "date": "2026-07-11",
+  "readTime": "١٥ دقيقة",
+  "coverImage": "/uploads/1783743169689-385253908b3c.jpg",
+  "thumbImage": "/uploads/1783743178043-415f9615af55.jpg",
+  "blocks": [
+    {
+      "id": "bmrfwunztw5h",
+      "type": "p",
+      "html": "<p data-start=\"211\" data-end=\"274\" class=\"PDq2pG_selectionAnchorContainer\">في عالم الشركات فيه استراتيجية قديمة يسمونها <b>معاول</b><strong data-start=\"256\" data-end=\"274\">&nbsp;الذهب</strong><span aria-hidden=\"true\" class=\"PDq2pG_selectionAnchor\"></span></p>\n<p data-start=\"276\" data-end=\"288\">الفكرة تقول:</p>\n<p data-start=\"290\" data-end=\"317\">إذا اكتشف الناس منجم ذهب...</p>\n<p data-start=\"319\" data-end=\"337\">لا تروح تحفر معهم.</p>\n<p data-start=\"339\" data-end=\"354\">بع لهم المجارف.</p>\n<p data-start=\"356\" data-end=\"419\">لأنك بدل ما تراهن على شخص واحد يلقى الذهب، تراهن على السوق كله.</p>"
+    },
+    {
+      "id": "bmrfx23fslst",
+      "type": "image",
+      "layout": "full",
+      "widthPct": 100,
+      "maxHeight": 500,
+      "caption": ""
+    },
+    {
+      "id": "bmrfx26ygscp",
+      "type": "p",
+      "html": "<p data-start=\"421\" data-end=\"484\">وأنا أبحث عن Mentra، ما توقعت أبدًا أن هذه الفكرة ترجع في بالي.</p><p data-start=\"486\" data-end=\"558\">في البداية كنت مقتنع أن Mentra مجرد شركة جديدة دخلت سوق النظارات الذكية.</p><p data-start=\"560\" data-end=\"609\">وشركة تدخل هذا السوق اليوم غالبًا عندها هدف واحد.</p><p data-start=\"611\" data-end=\"639\">تبني نظارة أفضل من الموجودة.</p><p data-start=\"641\" data-end=\"653\">كاميرا أفضل.</p><p data-start=\"655\" data-end=\"667\">بطارية أطول.</p><p data-start=\"669\" data-end=\"679\">تصميم أخف.</p><p data-start=\"681\" data-end=\"690\">وسعر أقل.</p><p data-start=\"692\" data-end=\"730\">دخلت موقعهم وأنا متوقع أشوف نفس الشيء.</p><p data-start=\"732\" data-end=\"762\">لكن أول دقيقة غيرت كل توقعاتي.</p>"
+    },
+    {
+      "id": "bmrfx34rd11k",
+      "type": "image",
+      "layout": "full",
+      "widthPct": 100,
+      "maxHeight": 500,
+      "caption": ""
+    },
+    {
+      "id": "bmrfx3nfe4ys",
+      "type": "divider"
+    },
+    {
+      "id": "bmrfx3ukohmh",
+      "type": "h2",
+      "html": "أول شيء شدني... ما كان النظارة"
+    },
+    {
+      "id": "bmrfx3qun89x",
+      "type": "image",
+      "layout": "full",
+      "widthPct": 100,
+      "maxHeight": 500,
+      "caption": ""
+    },
+    {
+      "id": "bmrfx3yezz21",
+      "type": "p",
+      "html": "<p data-start=\"804\" data-end=\"827\" class=\"PDq2pG_selectionAnchorContainer\">أول اسم تكرر قدامي كان:<span aria-hidden=\"true\" class=\"PDq2pG_selectionAnchor\"></span></p>\n<p data-start=\"829\" data-end=\"841\"><strong data-start=\"829\" data-end=\"841\">MentraOS</strong></p>\n<p data-start=\"843\" data-end=\"863\">في البداية قلت عادي.</p>\n<p data-start=\"865\" data-end=\"896\">أكيد أي نظارة تحتاج نظام تشغيل.</p>\n<p data-start=\"898\" data-end=\"978\">لكن كل ما تنقلت بين الموقع، بدأت ألاحظ أن الشركة تتكلم عن النظام أكثر من الجهاز.</p>\n<p data-start=\"980\" data-end=\"1000\">صفحة كاملة للمطورين.</p>\n<p data-start=\"1002\" data-end=\"1006\">SDK.</p>\n<p data-start=\"1008\" data-end=\"1014\">وثائق.</p>\n<p data-start=\"1016\" data-end=\"1023\">GitHub.</p>\n<p data-start=\"1025\" data-end=\"1035\">App Store.</p>\n<p data-start=\"1037\" data-end=\"1098\">حتى الأمثلة اللي يعرضونها ما كانت عن تصوير أجمل أو شاشة أفضل.</p>\n<p data-start=\"1100\" data-end=\"1131\">كانت عن كيف تبني تطبيق للنظارة.</p>\n<p data-start=\"1133\" data-end=\"1142\">هنا وقفت.</p>\n<p data-start=\"1144\" data-end=\"1148\">ليش؟</p>\n<p data-start=\"1150\" data-end=\"1218\">ليش شركة يفترض أنها تبيع جهاز، تقضي كل هذا الوقت وهي تخاطب المطورين؟</p>\n<p data-start=\"1220\" data-end=\"1237\">ما كان عندي جواب.</p>\n<p data-start=\"1239\" data-end=\"1262\">لكن صار عندي أول فرضية.</p>\n<p data-start=\"1264\" data-end=\"1309\"><strong data-start=\"1264\" data-end=\"1309\">يمكن أنا قاعد أفهم الشركة بالطريقة الخطأ.</strong></p>"
+    },
+    {
+      "id": "bmrfxa4qpfxn",
+      "type": "h2",
+      "html": "رجعت خطوة للخلف"
+    },
+    {
+      "id": "bmrfxa9da7f2",
+      "type": "p",
+      "html": "<p data-start=\"1336\" data-end=\"1355\" class=\"PDq2pG_selectionAnchorContainer\">إذا ما فهمت منتج...<span aria-hidden=\"true\" class=\"PDq2pG_selectionAnchor\"></span></p>\n<p data-start=\"1357\" data-end=\"1375\">أحب أروح للمؤسسين.</p>\n<p data-start=\"1377\" data-end=\"1403\">غالبًا تلقى عندهم الإجابة.</p>"
+    },
+    {
+      "id": "bmrfxbl350xj",
+      "type": "image",
+      "layout": "full",
+      "widthPct": 100,
+      "maxHeight": 500,
+      "caption": ""
+    },
+    {
+      "id": "bmrfxbomujti",
+      "type": "p",
+      "html": "<p data-start=\"1405\" data-end=\"1495\" class=\"PDq2pG_selectionAnchorContainer\">لقيت أن المؤسسين اشتغلوا لسنوات في تقنيات مرتبطة بالحوسبة القابلة للارتداء والواقع الممتد.<span aria-hidden=\"true\" class=\"PDq2pG_selectionAnchor\"></span></p>\n<p data-start=\"1497\" data-end=\"1533\">وهذه بالنسبة لي كانت أول إشارة مهمة.</p>\n<p data-start=\"1535\" data-end=\"1567\">هم ما دخلوا السوق بعد نجاح Meta.</p>\n<p data-start=\"1569\" data-end=\"1592\">ولا بعد انتشار ChatGPT.</p>\n<p data-start=\"1594\" data-end=\"1614\">كانوا موجودين قبلها.</p>\n<p data-start=\"1616\" data-end=\"1662\">وهذا غالبًا يعطيهم زاوية مختلفة لرؤية المشكلة.</p>\n<p data-start=\"1664\" data-end=\"1713\">في عالم الشركات يسمون هذا <strong data-start=\"1690\" data-end=\"1712\">Founder-Market Fit</strong>.</p>\n<p data-start=\"1715\" data-end=\"1739\">لكن اللي يهمني مو الاسم.</p>\n<p data-start=\"1741\" data-end=\"1762\">اللي يهمني هو السؤال:</p>\n<p data-start=\"1764\" data-end=\"1811\"><strong data-start=\"1764\" data-end=\"1811\">وش المشكلة اللي عاشوها وخلتهم يبنون Mentra؟</strong></p>"
+    },
+    {
+      "id": "bmrfxcehfkoz",
+      "type": "h2",
+      "html": "هنا بدأت الصورة تتغير"
+    },
+    {
+      "id": "bmrfxcs94w56",
+      "type": "p",
+      "html": "<p data-start=\"1844\" data-end=\"1919\" class=\"PDq2pG_selectionAnchorContainer\">إذا سألت أغلب الناس عن أكبر مشكلة في النظارات الذكية، بتسمع إجابات متشابهة.<span aria-hidden=\"true\" class=\"PDq2pG_selectionAnchor\"></span></p>\n<ul data-start=\"1921\" data-end=\"1962\">\n<li data-section-id=\"chtkfj\" data-start=\"1921\" data-end=\"1932\">\nالبطارية.\n</li>\n<li data-section-id=\"n1sz95\" data-start=\"1933\" data-end=\"1941\">\nالوزن.\n</li>\n<li data-section-id=\"jshbbs\" data-start=\"1942\" data-end=\"1953\">\nالكاميرا.\n</li>\n<li data-section-id=\"mzjvlq\" data-start=\"1954\" data-end=\"1962\">\nالسعر.\n</li>\n</ul>\n<p data-start=\"1964\" data-end=\"2035\">لكن كل ما قرأت أكثر، لاحظت أن Mentra تقريبًا ما تتكلم عن أي واحدة منها.</p>\n<p data-start=\"2037\" data-end=\"2073\">بدل ذلك، كانوا يتكلمون عن شيء مختلف.</p>\n<p data-start=\"2075\" data-end=\"2082\">المطور.</p>\n<p data-start=\"2084\" data-end=\"2103\">في البداية استغربت.</p>\n<p data-start=\"2105\" data-end=\"2109\">ليش؟</p>\n<p data-start=\"2111\" data-end=\"2138\">ليش المطور مهم لهذه الدرجة؟</p>\n<p data-start=\"2140\" data-end=\"2158\">بعدها تذكرت شيء.</p>"
+    },
+    {
+      "id": "bmrfxe1pog0e",
+      "type": "h2",
+      "html": "يمكن المشكلة أصلًا ليست في النظارة"
+    },
+    {
+      "id": "bmrfxehbk2bu",
+      "type": "p",
+      "html": "<p data-start=\"2204\" data-end=\"2221\" class=\"PDq2pG_selectionAnchorContainer\">خذ الآيفون كمثال.<span aria-hidden=\"true\" class=\"PDq2pG_selectionAnchor\"></span></p>\n<p data-start=\"2223\" data-end=\"2244\">لو رجعنا لأول نسخة...</p>\n<p data-start=\"2246\" data-end=\"2285\">هل كان أنجح هاتف لأنه يملك أفضل كاميرا؟</p>\n<p data-start=\"2287\" data-end=\"2295\">أكيد لا.</p>\n<p data-start=\"2297\" data-end=\"2330\">اللي صنع قيمته مع الوقت شيء ثاني.</p>\n<p data-start=\"2332\" data-end=\"2346\"><strong data-start=\"2332\" data-end=\"2346\">App Store.</strong></p>\n<p data-start=\"2348\" data-end=\"2375\">اليوم فيه ملايين التطبيقات.</p>\n<p data-start=\"2377\" data-end=\"2407\">وهذا اللي يخلي الآيفون مفيدًا.</p>\n<p data-start=\"2409\" data-end=\"2432\">وليس مجرد قطعة هاردوير.</p>\n<p data-start=\"2434\" data-end=\"2449\">وهنا بدأت أربط.</p>\n<p data-start=\"2451\" data-end=\"2505\">إذا كانت النظارات الذكية هي الجيل القادم من الحوسبة...</p>\n<p data-start=\"2507\" data-end=\"2532\">فوش اللي راح يصنع قيمتها؟</p>\n<p data-start=\"2534\" data-end=\"2546\">هل الكاميرا؟</p>\n<p data-start=\"2548\" data-end=\"2561\">أو التطبيقات؟</p>"
+    },
+    {
+      "id": "bmrfxevivebt",
+      "type": "h2",
+      "html": "وهنا جاءت أول لحظة الإدراك"
+    },
+    {
+      "id": "bmrfxf9adntc",
+      "type": "p",
+      "html": "<p data-start=\"2597\" data-end=\"2619\" class=\"PDq2pG_selectionAnchorContainer\">رجعت للموقع مرة ثانية.<span aria-hidden=\"true\" class=\"PDq2pG_selectionAnchor\"></span></p>\n<p data-start=\"2621\" data-end=\"2653\">هذه المرة وأنا أبحث عن شيء واحد.</p>\n<p data-start=\"2655\" data-end=\"2675\">هل هم يبنون نظارة...</p>\n<p data-start=\"2677\" data-end=\"2691\">أم يبنون منصة؟</p>\n<p data-start=\"2693\" data-end=\"2728\">كل دليل جديد كان يقربني من الإجابة.</p>\n<ul data-start=\"2730\" data-end=\"2804\">\n<li data-section-id=\"d7s123\" data-start=\"2730\" data-end=\"2741\">\nMentraOS.\n</li>\n<li data-section-id=\"1j4cxlm\" data-start=\"2742\" data-end=\"2748\">\nSDK.\n</li>\n<li data-section-id=\"1hv59lg\" data-start=\"2749\" data-end=\"2765\">\nDocumentation.\n</li>\n<li data-section-id=\"2psu2s\" data-start=\"2766\" data-end=\"2781\">\nمتجر تطبيقات.\n</li>\n<li data-section-id=\"d29a33\" data-start=\"2782\" data-end=\"2804\">\nHackathons للمطورين.\n</li>\n</ul>\n<p data-start=\"2806\" data-end=\"2835\">هذه مو قرارات شركة تبيع جهاز.</p>\n<p data-start=\"2837\" data-end=\"2872\">هذه قرارات شركة تبني نظامًا متكاملا.</p>\n<p data-start=\"2874\" data-end=\"2904\">وهنا رجعت لفكرة \"معاول الذهب\".</p>\n<p data-start=\"2906\" data-end=\"2938\">بدل ما تنافس على بيع النظارات...</p>\n<p data-start=\"2940\" data-end=\"2985\">ابنِ الشيء اللي كل شركات النظارات راح تحتاجه.</p>"
+    },
+    {
+      "id": "bmrfxg37bitc",
+      "type": "h2",
+      "html": "لكن... هنا عندي اعتراض"
+    },
+    {
+      "id": "bmrfxg8tuesu",
+      "type": "image",
+      "layout": "full",
+      "widthPct": 100,
+      "maxHeight": 500,
+      "caption": ""
+    },
+    {
+      "id": "bmrfxgbuamp5",
+      "type": "p",
+      "html": "<p data-start=\"83\" data-end=\"99\" class=\"PDq2pG_selectionAnchorContainer\">ليش صنعوا نظارة؟<span aria-hidden=\"true\" class=\"PDq2pG_selectionAnchor\"></span></p><p data-start=\"104\" data-end=\"130\">هذا أكثر سؤال جلس في بالي.</p><p data-start=\"135\" data-end=\"158\">لأن تصنيع الأجهزة مكلف.</p><p data-start=\"163\" data-end=\"169\">ومعقد.</p><p data-start=\"174\" data-end=\"195\">ويستهلك وقتًا كبيرًا.</p><p data-start=\"200\" data-end=\"229\">فليش ما ركزوا على النظام فقط؟</p><p data-start=\"234\" data-end=\"257\">كل ما فكرت فيها أكثر...</p><p data-start=\"262\" data-end=\"278\">بدأ الجواب يطلع.</p><p data-start=\"283\" data-end=\"335\">كيف تقنع شركة تستخدم نظام تشغيل جديد ما أحد استخدمه؟</p><p data-start=\"340\" data-end=\"360\">لازم تثبت أنه يشتغل.</p><p data-start=\"365\" data-end=\"403\"><strong data-start=\"365\" data-end=\"403\">وأفضل طريقة تثبت فيها هذا الشيء...</strong></p><p data-start=\"408\" data-end=\"433\"><strong data-start=\"408\" data-end=\"433\">أن تستخدمه أنت أولًا.</strong></p><p data-start=\"438\" data-end=\"471\"><strong data-start=\"438\" data-end=\"471\">وهذا بالضبط اللي سوته Mentra.</strong></p><p data-start=\"476\" data-end=\"518\"><strong data-start=\"476\" data-end=\"518\">أول عميل لـ MentraOS كان Mentra نفسها.</strong></p><p data-start=\"523\" data-end=\"553\">فجأة صار وجود النظارة منطقيًا.</p><p data-start=\"558\" data-end=\"573\">هي ليست المنتج.</p><p data-start=\"578\" data-end=\"591\">هي أول إثبات.</p><p data-start=\"3050\" data-end=\"3066\" class=\"PDq2pG_selectionAnchorContainer\">\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n</p><p data-start=\"596\" data-end=\"647\">وأعتقد أن هذه من أذكى القرارات اللي اتخذتها الشركة.</p>"
+    },
+    {
+      "id": "bmrfxmh6wpjv",
+      "type": "h2",
+      "html": "<h2 data-section-id=\"6467kd\" data-start=\"3483\" data-end=\"3508\" class=\"PDq2pG_selectionAnchorContainer\"><span style=\"font-size: 20px;\">لكن... فيه دليل ثاني أقوى</span></h2>\n<p data-start=\"3510\" data-end=\"3550\"></p>"
+    },
+    {
+      "id": "bmrfxnn0c5jw",
+      "type": "p",
+      "html": "<p data-start=\"3510\" data-end=\"3550\" class=\"PDq2pG_selectionAnchorContainer\">لاحظت أن الشركة ما وقفت عند بناء النظام.<span aria-hidden=\"true\" class=\"PDq2pG_selectionAnchor\"></span></p>\n<p data-start=\"3552\" data-end=\"3592\">بعد أشهر قليلة فقط بدأت تنظم Hackathons.</p>\n<p data-start=\"3594\" data-end=\"3640\">وفي نفس الوقت كانت تفتح أدوات التطوير للمجتمع.</p>\n<p data-start=\"3642\" data-end=\"3656\">هنا سألت نفسي.</p>\n<p data-start=\"3658\" data-end=\"3711\">ليش شركة ما زالت في بدايتها تستثمر وقتها في المطورين؟</p>\n<p data-start=\"3713\" data-end=\"3737\">الإجابة، في رأيي، بسيطة.</p>\n<p data-start=\"3739\" data-end=\"3776\">لأنهم ما يقيسون نجاحهم بعدد النظارات.</p>\n<p data-start=\"3778\" data-end=\"3801\">يقيسونه بعدد التطبيقات.</p>\n<p data-start=\"3803\" data-end=\"3836\">كل تطبيق جديد يزيد قيمة MentraOS.</p>\n<p data-start=\"3838\" data-end=\"3869\">وكل مطور جديد يجعل المنصة أقوى.</p>"
+    },
+    {
+      "id": "bmrfxnzxez9s",
+      "type": "image",
+      "layout": "full",
+      "widthPct": 100,
+      "maxHeight": 500,
+      "caption": ""
+    },
+    {
+      "id": "bmrfxo9k4pm7",
+      "type": "h2",
+      "html": "طيب... وش اللي أقنع المستثمرين؟"
+    },
+    {
+      "id": "bmrfxojine71",
+      "type": "p",
+      "html": "<p data-start=\"3912\" data-end=\"3933\" class=\"PDq2pG_selectionAnchorContainer\">الشركة تأسست في 2024.<span aria-hidden=\"true\" class=\"PDq2pG_selectionAnchor\"></span></p>\n<p data-start=\"3935\" data-end=\"4010\">وبعد أقل من سنة انضمت إلى Y Combinator، ثم جمعت أكثر من <strong data-start=\"3991\" data-end=\"4009\">8 ملايين دولار</strong>.</p>\n<p data-start=\"4012\" data-end=\"4063\">بالنسبة لي، هذا الرقم كان دليلًا يستحق التوقف عنده.</p>\n<p data-start=\"4065\" data-end=\"4107\">لأن المستثمرين هنا ما كانوا يشترون مبيعات.</p>\n<p data-start=\"4109\" data-end=\"4132\">ولا مستخدمين بالملايين.</p>\n<p data-start=\"4134\" data-end=\"4156\">كانوا يشترون <strong data-start=\"4147\" data-end=\"4155\">رؤية</strong>.</p>\n<p data-start=\"4158\" data-end=\"4189\">لكن هل كانت الرؤية وحدها كافية؟</p>\n<p data-start=\"4191\" data-end=\"4200\">أعتقد لا.</p>\n<p data-start=\"4202\" data-end=\"4254\">اللي أقنعهم - من وجهة نظري - هو اجتماع أكثر من عامل:</p>\n<ul data-start=\"4256\" data-end=\"4377\">\n<li data-section-id=\"1l91h3j\" data-start=\"4256\" data-end=\"4289\">\nمؤسسون يعرفون المجال من الداخل.\n</li>\n<li data-section-id=\"1cctsq5\" data-start=\"4290\" data-end=\"4305\">\nسوق بدأ ينضج.\n</li>\n<li data-section-id=\"13slf0c\" data-start=\"4306\" data-end=\"4339\">\nمنتج يحل مشكلة حقيقية للمطورين.\n</li>\n<li data-section-id=\"l2o1ak\" data-start=\"4340\" data-end=\"4377\">\nورهان على منصة، وليس على جهاز واحد.\n</li>\n</ul>\n<p data-start=\"4379\" data-end=\"4467\">هذه ليست حقائق معلنة من المستثمرين، لكنها الفرضية التي وصلت إليها بعد ربط الأدلة ببعضها.</p>"
+    },
+    {
+      "id": "bmrfxove06s9",
+      "type": "h2",
+      "html": "هل أعتقد أنهم سينجحون؟"
+    },
+    {
+      "id": "bmrfxp59qp2n",
+      "type": "p",
+      "html": "<p data-start=\"4501\" data-end=\"4510\" class=\"PDq2pG_selectionAnchorContainer\">بصراحة...<span aria-hidden=\"true\" class=\"PDq2pG_selectionAnchor\"></span></p>\n<p data-start=\"4512\" data-end=\"4520\">لا أعرف.</p>\n<p data-start=\"4522\" data-end=\"4565\">وأعتقد أن أي شخص يجزم بالإجابة اليوم يبالغ.</p>\n<p data-start=\"4567\" data-end=\"4608\">بناء نظام تشغيل أصعب بكثير من بناء تطبيق.</p>\n<p data-start=\"4610\" data-end=\"4624\">ويحتاج مطورين.</p>\n<p data-start=\"4626\" data-end=\"4633\">وشركات.</p>\n<p data-start=\"4635\" data-end=\"4656\">وسوقًا يكبر باستمرار.</p>\n<p data-start=\"4658\" data-end=\"4688\">ولو أخطأوا في أي واحدة منها...</p>\n<p data-start=\"4690\" data-end=\"4713\">قد يفشل الرهان بالكامل.</p>\n<p data-start=\"4715\" data-end=\"4728\">لكن لو نجح...</p>\n<p data-start=\"4730\" data-end=\"4790\">فقد تصبح Mentra في موقع مختلف تمامًا عن شركة تبيع نظارة فقط.</p>"
+    },
+    {
+      "id": "bmrfxpt5ml6i",
+      "type": "h2",
+      "html": "أكثر شيء تعلمته من Mentra"
+    },
+    {
+      "id": "bmrfxq3a19oc",
+      "type": "p",
+      "html": "<p data-start=\"4827\" data-end=\"4885\" class=\"PDq2pG_selectionAnchorContainer\">دخلت وأنا أعتقد أن النجاح في سوق جديد يعني بناء أفضل منتج.<span aria-hidden=\"true\" class=\"PDq2pG_selectionAnchor\"></span></p>\n<p data-start=\"4887\" data-end=\"4909\">لكن خرجت بفكرة مختلفة.</p>\n<p data-start=\"4911\" data-end=\"4969\"><strong data-start=\"4911\" data-end=\"4969\">ربما أكبر فرصة ليست في بناء المنتج الذي يراه الجميع...</strong></p>\n<p data-start=\"4971\" data-end=\"5014\"><strong data-start=\"4971\" data-end=\"5014\">بل في بناء الطبقة التي سيحتاجها الجميع.</strong></p>\n<p data-start=\"5016\" data-end=\"5054\">ولا أدري إذا كان هذا هو الرهان الصحيح.</p>\n<p data-start=\"5056\" data-end=\"5078\">لكن أعرف شيئًا واحدًا.</p>\n<p data-start=\"5080\" data-end=\"5127\">من اليوم، كلما رأيت سوقًا جديدًا، لن أسأل نفسي:</p>\n<blockquote data-start=\"5129\" data-end=\"5159\">\n<p data-start=\"5131\" data-end=\"5159\"><em data-start=\"5131\" data-end=\"5159\">وش المنتج اللي أقدر أبنيه؟</em></p>\n</blockquote>\n<p data-start=\"5161\" data-end=\"5182\">سأسأل سؤالًا مختلفًا.</p>\n<blockquote data-start=\"5184\" data-end=\"5234\">\n<p data-start=\"5186\" data-end=\"5234\"><strong data-start=\"5186\" data-end=\"5234\">وش الشيء اللي كل من سيدخل هذا السوق سيحتاجه؟</strong></p></blockquote>"
+    },
+    {
+      "id": "bmrfxqjtlg80",
+      "type": "divider"
+    }
+  ]
+}
